@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script type="text/javascript" src="borderlandsDPSCalculator.js"></script>
+		<title>Borderlands DPS Compare</title>
+	</head>
+	<body>
+		<table align="center"border="0" width="800">
+			<tr align="center">
+				<td width="400">
+					<p style="font-size:20" style="text-decoration:bold">
+						Arma 1
+					</p>
+				</td>
+				<td width="400">
+					<p style="font-size:20">
+						Arma 2
+					</p>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="Damage" id="Damage1">
+				</td>
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="Damage" id="Damage2">
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="Accuracy" id="Accuracy1">
+				</td>
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="Accuracy" id="Accuracy2">
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="FireRate" id="FireRate1">
+				</td>
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="FireRate" id="FireRate2">
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="BulletsPerLoad" id="Bullets1">
+				</td>
+				<td>
+					<input type="text" onclick="textBox(this)" size="40" style="color:gray" value="BulletsPerLoad" id="Bullets2">
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="2"><input type="button" value="Calculate" id="calculate()" onclick="Calculate()"></td>
+			</tr>
+			<tr>
+				<td>
+					<div align="right" id="Weap1"></div>
+				</td>
+				<td>
+					<div align="left" id="Weap2"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
